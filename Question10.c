@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-main()
+void main()
 {
     int x, y = 0, r;
 
@@ -17,5 +17,11 @@ main()
         x = x / 10;
     }
 
-    printf("reverse number %d", y);
+    printf("\nreverse number %d", y);
+    if (x == y)
+    {
+        printf("\nits a palindrome number");
+    }
+    else
+        printf("\nits not a palindrome number");
 }
